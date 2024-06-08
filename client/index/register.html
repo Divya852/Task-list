@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+   
+    background-size: auto;
+ 
+    }
+  #register-section {
+    background: light white;
+    padding: 60px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(242, 80, 80, 0.1);
+    text-align: center;
+  }
+
+  #register-section h2 {
+    margin-bottom: 20px;
+  }
+
+  #register-section input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #c32f2f;
+    border-radius: 5px;
+  }
+  
+</style>
+</head>
+<body>
+  <div id="register-section">
+    <h2>Register</h2>
+    <input type="text" id="register-name" placeholder="Name">
+    <input type="text" id="register-username" placeholder="Username">
+    <input type="password" id="register-password" placeholder="Password">
+    <button onclick="register()">Register</button>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+  <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List App</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Task List App</h1>
+    <div id="auth-section">
+      <h2>Register</h2>
+      <input type="text" id="register-name" placeholder="Name">
+      <input type="text" id="register-username" placeholder="Username">
+      <input type="password" id="register-password" placeholder="Password">
+      <button onclick="register()">Register</button>
+      
+      <h2>Login</h2>
+      <input type="text" id="login-username" placeholder="Username">
+      <input type="password" id="login-password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="task-section" style="display: none;">
+      <h2>Create Task</h2>
+      <input type="text" id="task-title" placeholder="Title">
+      <input type="text" id="task-description" placeholder="Description">
+      <input type="datetime-local" id="task-deadline">
+      <button onclick="createTask()">Create Task</button>
+      <h2>My Tasks</h2>
+      <div id="tasks-list"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks</title>
+  <style>
+    .task-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+   
+    background-size: auto;
+ 
+    }
+  #task-section {
+    background: light white;
+    padding: 60px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(242, 80, 80, 0.1);
+    text-align: center;
+  }
+
+  #task-section h2 {
+    margin-bottom: 20px;
+  }
+
+  #task-section input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #c32f2f;
+    border-radius: 5px;
+  }
+  
+
+  </style>
+</head>
+<body>
+  
+  <div id="task-section">
+    <h2>Tasks</h2>
+    <input type="text" id="task-title" placeholder="Title">
+    <input type="text" id="task-description" placeholder="Description">
+    <input type="datetime-local" id="task-deadline">
+    <button onclick="createTask()">Create Task</button>
+    <div id="tasks-list"></div>
+  </div>
+
+  <script src="../main.js"></script>
+</body>
+</html>
